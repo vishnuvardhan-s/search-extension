@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        .searchMinimalist {
+            background-image: none;
+            background-color: initial;
+            outline-color: initial;
+            color: rgb(232, 230, 227);
+            border-color: initial;
+            text-shadow: rgb(0 0 0 / 13%) 0px 5px 10px;
+            font-size: 70px;
+            font-family: Inter, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            background: none;
+            text-align: center;
+            width: 100%;
+            outline: 0;
+            color: #fff;
+            border: 0px;
+        }
+
+        .hintMinimalist {
+            font-size: 20px;
+            font-family: Inter, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: rgb(217, 217, 212)
+        }
+
+        body,
+        html {
+            height: 95%;
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <input placeholder="Search" id="search" type="text" class="searchMinimalist" autofocus>
+    <p class="hintMinimalist" id="searchEngineTip"></p>
+</body>
+<script src="newtab.js"></script>
+
+</html>

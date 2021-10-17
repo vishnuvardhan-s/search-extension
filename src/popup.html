@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Tab</title>
+    <style>
+        body {
+            width: 200px;
+            background-color: #363636;
+        }
+
+        .font {
+            font-family: Inter, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 15px;
+        }
+
+        .options {
+            font-size: 12px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading font">Minimalist Tab Settings</p>
+    <div class="box">
+        <select class="font options" style="color: black;" id="theme">
+            <option disabled>Choose Theme</option>
+            <option value="theme1">Theme 1</option>
+            <option value="theme2">Theme 2</option>
+            <option value="theme3">Theme 3</option>
+            <option value="theme4">Theme 4</option>
+        </select>
+    </div>
+    <br>
+    <div class="box">
+        <select class="font options" style="color: black;" id="engine">
+            <option disabled>Choose Engine</option>
+            <option value="engine1">Google</option>
+            <option value="engine2">YouTube</option>
+            <option value="engine3">Duck Duck Go</option>
+            <option value="engine4">Bing</option>
+            <option value="engine4">Ecosia</option>
+        </select>
+    </div>
+</body>
+
+<script src="popup.js"></script>
+
+</html>
