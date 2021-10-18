@@ -13,20 +13,11 @@
         "default_icon": "icon.png",
         "default_popup": "src/popup.html"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "src/popup.js"
-            ]
-        }
-    ],
     "chrome_url_overrides": {
         "newtab": "src/newtab.html"
     },
     "permissions": [
-        "storage"
+        "storage",
+        "activeTab"
     ]
 }
