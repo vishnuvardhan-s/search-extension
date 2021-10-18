@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Minimalist Tab",
-    "short_name": "New Minimalist Tab",
+    "name": "Minimalist New Tab",
+    "short_name": "Minimalist New Tab",
     "description": "Overriding default chrome tab with minimalist new tab",
     "version": "1.0.0",
     "icons": {
