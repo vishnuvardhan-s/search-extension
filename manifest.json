@@ -19,8 +19,7 @@
                 "<all_urls>"
             ],
             "js": [
-                "src/popup.js",
-                "src/newtab.js"
+                "src/popup.js"
             ]
         }
     ],
