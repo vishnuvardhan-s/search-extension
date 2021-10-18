@@ -70,7 +70,8 @@ function showToolTip(searchEngine) {
 function detectSearchEngine(query) {
     const queryList = query.split(" ");
     if (queryList.length <= 1) {
-        showToolTip("Default");
+        searchEngine = "Default";
+        showToolTip(searchEngine);
     }
     else {
         switch (queryList[0]) {
