@@ -1,12 +1,12 @@
 function focusOnInput() {
+    if (!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
     if (localStorage.getItem("searchTheme") === null) {
         localStorage.setItem("searchTheme", "theme1");
     }
     const selectedTheme = localStorage.getItem("searchTheme");
-    if (!window.location.hash) {
-        window.location = window.location + '#focusload';
-        window.location.reload();
-    }
     showToolTip(searchEngine);
     applyTheme(selectedTheme);
 }
@@ -95,23 +95,55 @@ function detectSearchEngine(query) {
 }
 
 function setTheme1() {
-    const body = document.querySelector("html");
-    body.style.backgroundColor = "red";
+    const html = document.querySelector("html");
+    const input = document.getElementById("search");
+    const tip = document.getElementById("searchEngineTip");
+    html.style.background = "linear-gradient(to bottom, #24c6dc, #514a9d)";
+    input.classList.remove("theme2");
+    input.classList.remove("theme3");
+    input.classList.remove("theme4");
+    input.classList.add("theme1");
+    input.style.color = "rgb(194,194,194)";
+    tip.style.color = "rgb(194,194,194)";
 }
 
 function setTheme2() {
-    const body = document.querySelector("html");
-    body.style.backgroundColor = "gray"
+    const html = document.querySelector("html");
+    const input = document.getElementById("search");
+    const tip = document.getElementById("searchEngineTip");
+    html.style.background = "linear-gradient(to top, #70e1f5, #ffd194)";
+    input.classList.remove("theme1");
+    input.classList.remove("theme3");
+    input.classList.remove("theme4");
+    input.classList.add("theme2");
+    input.style.color = "rgb(61,61,61)";
+    tip.style.color = "rgb(61,61,61)";
 }
 
 function setTheme3() {
-    const body = document.querySelector("html");
-    body.style.backgroundColor = "orange"
+    const html = document.querySelector("html");
+    const input = document.getElementById("search");
+    const tip = document.getElementById("searchEngineTip");
+    html.style.background = "linear-gradient(to bottom, #009fff, #ec2f4b)";
+    input.classList.remove("theme1");
+    input.classList.remove("theme2");
+    input.classList.remove("theme4");
+    input.classList.add("theme3");
+    input.style.color = "rgb(194, 194, 194)";
+    tip.style.color = "rgb(194,194,194)";
 }
 
 function setTheme4() {
-    const body = document.querySelector("html");
-    body.style.backgroundColor = "green"
+    const html = document.querySelector("html");
+    const input = document.getElementById("search");
+    const tip = document.getElementById("searchEngineTip");
+    html.style.background = "linear-gradient(to top, #000000, #434343)";
+    input.classList.remove("theme1");
+    input.classList.remove("theme2");
+    input.classList.remove("theme3");
+    input.classList.add("theme4");
+    input.style.color = "rgb(207, 207, 207)";
+    tip.style.color = "rgb(207, 207, 207)";
 }
 
 function applyTheme(theme) {
@@ -130,9 +162,6 @@ function applyTheme(theme) {
             break;
     }
 }
-
-var searchEngine = "Default";
-window.onload = focusOnInput()
 
 const search = document.getElementById("search");
 search.addEventListener("keyup", function (event) {
@@ -153,3 +182,7 @@ window.addEventListener("storage", function () {
     applyTheme(selectedTheme);
     showToolTip(decodeEngine(selectedEngine));
 });
+
+
+var searchEngine = "Default";
+window.onload = focusOnInput()
