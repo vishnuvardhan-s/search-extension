@@ -1,3 +1,5 @@
+# Chrome Web Store Link
+https://chrome.google.com/webstore/detail/minimalist-new-tab/iehccnopkiigfhcfjkgefhlmjhnmceje
 # New Tab Search Extension
   A minimalist search extension
 
