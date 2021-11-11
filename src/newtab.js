@@ -76,18 +76,23 @@ function detectSearchEngine(query) {
     else {
         switch (queryList[0]) {
             case "g":
+            case "G":
                 searchEngine = "Google";
                 break;
             case "d":
+            case "D":
                 searchEngine = "Duck Duck Go";
                 break;
             case "y":
+            case "Y":
                 searchEngine = "YouTube";
                 break;
             case "b":
+            case "B":
                 searchEngine = "Bing";
                 break;
             case "e":
+            case "E":
                 searchEngine = "Ecosia";
                 break;
         }
