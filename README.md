@@ -20,3 +20,8 @@ https://chrome.google.com/webstore/detail/minimalist-new-tab/iehccnopkiigfhcfjkg
   3. Go to the URL chrome://extensions in the browser
   4. Turn on developer mode
   5. Click on Load Unpacked and select the search-extension folder
+  
+  # Note
+  Releases are also done periodically.  To directly check out the extension, please clone the repo locally and install as per the above instructions.
+
+  
