@@ -14,9 +14,9 @@ https://chrome.google.com/webstore/detail/minimalist-new-tab/iehccnopkiigfhcfjkg
   https://user-images.githubusercontent.com/45058522/137688608-c1766e2c-7b4e-42f0-827f-ff6d51506d86.mp4
   
 # To install
+  0. Github code might be ahead of the actual extension @ webstore. To test out new features...
   1. Install the latest extension from https://github.com/coderrag/search-extension/releases 
   2. Download the ZIP file and extract it
   3. Go to the URL chrome://extensions in the browser
   4. Turn on developer mode
   5. Click on Load Unpacked and select the search-extension folder
-  
